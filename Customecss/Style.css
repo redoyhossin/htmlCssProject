@@ -1,6 +1,6 @@
 * {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
 /*********
@@ -8,56 +8,50 @@
    ***********/
 
 .header-Bac {
-    width: 100%;
-    height: 100vh;
-    background-image: url("/images/banner/banner2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-}
-
-.hed-alaing {
-    text-align: right;
+  background-image: url("/images/banner/banner2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 47vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: end;
 }
 
 .header-text {
-
-    font-weight: bold;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 45px;
-    padding: 155px;
-    padding-bottom: 0%;
-
+  width: 45%;
+  padding: 0px;
+  font-weight: bold;
+  font-family: system-ui, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.5rem;
 }
 
 #hed-pra {
-
-    padding-right: 155px;
-    color: #444343;
-
-
-
+  color: #444343;
+  width: 45%;
 }
 
+.ghartera {
+  width: 45%;
+  margin: 0.6rem 0px;
+}
 #hed-btn {
-    margin-right: 158px;
-    padding: 15px 20px;
-    border-radius: 4px;
-    background-color: #F15B22;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    color: wheat;
-
+  padding: 15px 20px;
+  border-radius: 4px;
+  background-color: #f15b22;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: wheat;
 }
-
 
 /********************
  Header-end 
            *************/
-
 
 /****************
                  Main-state 
@@ -67,33 +61,29 @@
             previous-year-state
              *******************/
 .previous-year {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #unol {
-    list-style: none;
+  list-style: none;
 }
 
 /************************
             previous-year-end
              *******************/
 
-
 /********************* 
 my plans-State 
 *********************/
 
 .myPlans-hed {
-    display: grid;
-    gap: 80px;
-    grid-template-columns: auto auto;
-    text-align: center;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: auto auto;
+  text-align: center;
 }
-
-
 
 /********************* 
 my plans-end 
@@ -104,62 +94,153 @@ my plans-end
  gardianPic_body_state
   ***********************/
 .gardianPic_body {
-    margin: 50px auto;
-    background-image: linear-gradient(90deg, #c60b1b99, Transparent), url("/images/watch.png");
-    width: 1140px;
-    height: 250px;
-    border-radius: 9px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  margin: 50px auto;
+  background-image: linear-gradient(90deg, #c60b1b99, Transparent),
+    url("/images/watch.png");
+  width:100%;
+  height: 250px;
+  border-radius: 9px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img-body-btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    color: #1159df;
-    font-weight: bold;
-    font-size: medium;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #1159df;
+  font-weight: bold;
+  font-size: medium;
+}
+.btn-positive {
+  font-weight: 500;
+  color: wheat;
 }
 
 #size-img-text {
-    padding: 65px;
+  padding: 65px;
 }
 
 /*****************
  gardianPic_body-End
   ***********************/
 
-
-
 /*******************
            
             main-end 
                     ***************/
 
-
 /*****************
                      Footer-State 
                      ******************************/
-.footer-mainDev{
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 120px 0px;
-    padding: 80px 0px;
-
+.footer-mainDev {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 120px 0px;
+  padding: 80px 0px;
+}
+.social-link img{
+  width: 35px;
+  margin:8px 0px;
+  padding-right:7px;
 }
 
-#footer-btn{
-    padding: 15px 20px;
-    border-radius: 4px;
-    background-color: #F15B22;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    color: wheat;
+#footer-btn {
+  padding: 14px 18px;
+  border-radius: 4px;
+  background-color: #f15b22;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: wheat;
 }
 /*****************
                      Footer-end 
                      ******************************/
+
+/* responsive-part=====================*/
+
+/*devices Mobile  */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* header-secton */
+  .header-text,
+  .ghartera,
+  #hed-pra {
+    font-size: small;
+    width: 100%;
+  }
+
+  .hed-alaing {
+    padding: 11px 20px;
+  }
+  #hed-btn {
+    padding: 8px 8px;
+    font-size: x-small;
+  }
+  /* header-secton */
+  /* main-section */
+
+  /* aside-section */
+
+  .previous-year {
+    flex-direction: column-reverse;
+  }
+
+  /* aside-section */
+
+  /* others */
+  .gardianPic_body {
+    width: 100%;
+    height: 100%;
+  }
+  #size-img-text {
+    padding: 10px 20px;
+    margin: 8px;
+  }
+  .img-body-btn {
+    padding: 3px 6px;
+
+    font-size: x-small;
+  }
+  .btn-positive {
+    font-size: smaller;
+    gap: 0px;
+  }
+  /* others */
+
+  /****************** MyPlans-State  */
+  .myPlans-hed {
+    grid-template-columns: 1fr;
+  }
+
+  /****************** MyPlans-State  */
+
+  /* Footer-state **********************
+ ******************* */
+
+  .footer-mainDev {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: small;
+    line-height: normal;
+  }
+  .footer-conatainer {
+    height: 400px !important;
+  }
+
+  /* **********************
+ Footer-end 
+ ******************* */
+
+  /* main-section */
+}
+
+
+
+
+/* responsive-part=====================*/
